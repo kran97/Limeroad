@@ -1,15 +1,13 @@
 <div class="main">
-    <div class="scroll-ele" infiniteScroll [infiniteScrollDistance]="1" [infiniteScrollThrottle]="3000"
+    <div class="scroll-ele" infiniteScroll [infiniteScrollDistance]="1" [infiniteScrollThrottle]="1000"
         (scrolled)="onScroll()">
-        <div class="divs" *ngFor="let dog of dogs">
-            <img src="{{dog}}" alt="" class="image" />
-        </div>
-        <div class="divs" *ngFor="let cat of cats">
-            <img src="{{cat}}" alt="" class="image" />
-        </div>
-        <div class="divs" *ngFor="let fo of fox">
-            <img src="{{fo}}" alt="" class="image" />
-        </div>
+        <div class="row" *ngFor="let dog of dogs; let i = index">
+            <div class="col-4"><img src="{{dogs[i]}}" alt="dog" class="image" /></div>
+            
+            <div class="col-4"><img src="{{cats[i]}}" alt="cat" class="image" /></div>
+            
+            <div class="col-4"><img src="{{fox[i]}}" alt="fox" class="image" /></div>
+        </div> 
     </div>
 </div>
 

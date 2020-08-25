@@ -2,31 +2,35 @@
     box-sizing: border-box;
 }
 
-.main {
-    width: 95%;
-    margin: 0 auto;
-}
-
 @media screen and (min-width: 720px) {
     .scroll-ele {
-        width: 30%;
-        display: inline-block;
-        float: left;
-        white-space: nowrap;
-        margin: 0;
-        padding: 0;
+        width: 100%;
     }
 }
 
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (min-width: 720px) {
-    .divs {
-        float: left;
-        display: inline-block;
+    .row {
+        flex-direction: row;
+    }
+}
+
+.col-4 {
+    width: 90%;
+}
+
+@media screen and (min-width: 720px) {
+    .col-4 {
+        width: 33%;
     }
 }
 
 .image {
-    height: 250px;
+    height: 300px!important;
     width: 90%;
 }
 

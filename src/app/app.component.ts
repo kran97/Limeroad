@@ -16,7 +16,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    for(let i=0; i<4; i++){
+    for(let i=0; i<3; i++){
       this.receiveDogs();
       this.receiveCats();
       this.receiveFox();
@@ -57,7 +57,7 @@ export class AppComponent {
   }
 
   onScroll() {
-    for(let i=0; i<4; i++){
+    for(let i=0; i<3; i++){
       this.receiveDogs();
       this.receiveCats();
       this.receiveFox();
