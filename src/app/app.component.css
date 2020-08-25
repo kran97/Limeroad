@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 720px) {
+    .scroll-ele {
+        width: 30%;
+        display: inline-block;
+        float: left;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .divs {
+        float: left;
+        display: inline-block;
+    }
+}
+
+.image {
+    height: 250px;
+    width: 90%;
+}
+
+@media screen and (min-width: 720px) {
+    .image {
+        height: 33vh;
+    }
+}
